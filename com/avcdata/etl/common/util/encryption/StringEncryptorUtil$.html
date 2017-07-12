@@ -151,19 +151,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.encryption.StringEncryptorUtil#DEFAULT_PASSWORD" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="DEFAULT_PASSWORD:String"></a>
-      <a id="DEFAULT_PASSWORD:String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">DEFAULT_PASSWORD</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      </h4>
-      
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -196,7 +183,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.encryption.StringEncryptorUtil#decrypt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.encryption.StringEncryptorUtil#decrypt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="decrypt(encryptedMessage:String,password:String):String"></a>
       <a id="decrypt(String,String):String"></a>
       <h4 class="signature">
@@ -205,12 +192,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decrypt</span><span class="params">(<span name="encryptedMessage">encryptedMessage: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol"><span class="name"><a href="#DEFAULT_PASSWORD:String">DEFAULT_PASSWORD</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">decrypt</span><span class="params">(<span name="encryptedMessage">encryptedMessage: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">DEFAULT_PASSWORD</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.util.encryption.StringEncryptorUtil#encrypt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="encrypt(message:String,passowrd:String):String"></a>
+      <p class="shortcomment cmt">解密消息。
+</p><div class="fullcomment"><div class="comment cmt"><p>解密消息。
+</p></div><dl class="paramcmts block"><dt class="param">encryptedMessage</dt><dd class="cmt"><p>加密消息字符串。</p></dd><dt class="param">password</dt><dd class="cmt"><p>解密密码码。
+</p></dd><dt>returns</dt><dd class="cmt"><p>解密后的字符串。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.encryption.StringEncryptorUtil#encrypt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="encrypt(message:String,password:String):String"></a>
       <a id="encrypt(String,String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -218,10 +209,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">encrypt</span><span class="params">(<span name="message">message: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="passowrd">passowrd: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol"><span class="name"><a href="#DEFAULT_PASSWORD:String">DEFAULT_PASSWORD</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">encrypt</span><span class="params">(<span name="message">message: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">DEFAULT_PASSWORD</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">加密消息。
+</p><div class="fullcomment"><div class="comment cmt"><p>加密消息。
+</p></div><dl class="paramcmts block"><dt class="param">message</dt><dd class="cmt"><p>源消息字符串。</p></dd><dt class="param">password</dt><dd class="cmt"><p>加密密码码。
+</p></dd><dt>returns</dt><dd class="cmt"><p>加密后的字符串。
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
