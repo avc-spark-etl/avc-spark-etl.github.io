@@ -39,7 +39,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>TODO 类说明</p><p>Author   : wangxp</p><p>DateTime : 16/7/27 18:33
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>日期时间工具类。</p><p>Author   : wangxp</p><p>DateTime : 16/7/27 18:33
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
@@ -163,7 +163,8 @@
         <span class="name">NORMAL_DATETIME_FORMAT</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">正常的日期时间格式(yyyy-MM-dd HH:mm:ss)。
+</p>
     </li><li name="com.avcdata.etl.common.util.DateTimeUtil#NORMAL_DATETIME_REGEX" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NORMAL_DATETIME_REGEX:scala.util.matching.Regex"></a>
       <a id="NORMAL_DATETIME_REGEX:Regex"></a>
@@ -176,7 +177,8 @@
         <span class="name">NORMAL_DATETIME_REGEX</span><span class="result">: <span class="extype" name="scala.util.matching.Regex">Regex</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">匹配日期时间正则表达式对象。
+</p>
     </li><li name="com.avcdata.etl.common.util.DateTimeUtil#NORMAL_DATE_FORMAT" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NORMAL_DATE_FORMAT:String"></a>
       <a id="NORMAL_DATE_FORMAT:String"></a>
@@ -189,7 +191,8 @@
         <span class="name">NORMAL_DATE_FORMAT</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">正常的日期格式(yyyy-MM-dd)。
+</p>
     </li><li name="com.avcdata.etl.common.util.DateTimeUtil#NORMAL_TIME_FORMAT" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NORMAL_TIME_FORMAT:String"></a>
       <a id="NORMAL_TIME_FORMAT:String"></a>
@@ -202,7 +205,8 @@
         <span class="name">NORMAL_TIME_FORMAT</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">正常的时间格式(HH:mm:ss)。
+</p>
     </li><li name="com.avcdata.etl.common.util.DateTimeUtil#TIME_WITH_ZONE_FORMAT" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="TIME_WITH_ZONE_FORMAT:String"></a>
       <a id="TIME_WITH_ZONE_FORMAT:String"></a>
@@ -215,7 +219,8 @@
         <span class="name">TIME_WITH_ZONE_FORMAT</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">带时区信息的日期时间格式(yyyy-MM-dd'T'HH:mm:ssX)。
+</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -248,7 +253,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#dateToHalfYearWeek" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#dateToHalfYearWeek" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="dateToHalfYearWeek(date:java.util.Date):String"></a>
       <a id="dateToHalfYearWeek(Date):String"></a>
       <h4 class="signature">
@@ -260,9 +265,12 @@
         <span class="name">dateToHalfYearWeek</span><span class="params">(<span name="date">date: <span class="extype" name="java.util.Date">Date</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">将指定时间计算时间偏移后转换为年周格式,如16W22
-</p>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#dateToYearWeek" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将指定时间计算时间偏移后转换为年周格式,如16W22。
+</p><div class="fullcomment"><div class="comment cmt"><p>将指定时间计算时间偏移后转换为年周格式,如16W22。
+</p></div><dl class="paramcmts block"><dt class="param">date</dt><dd class="cmt"><p>日期对象。
+</p></dd><dt>returns</dt><dd class="cmt"><p>年周格式的字符串。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#dateToYearWeek" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="dateToYearWeek(sourceTime:String,timePattern:String,yearOffset:Int,monthOffset:Int,dayOffset:Int,beginYearWeek:String):String"></a>
       <a id="dateToYearWeek(String,String,Int,Int,Int,String):String"></a>
       <h4 class="signature">
@@ -274,8 +282,11 @@
         <span class="name">dateToYearWeek</span><span class="params">(<span name="sourceTime">sourceTime: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="timePattern">timePattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="yearOffset">yearOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="monthOffset">monthOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="dayOffset">dayOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="beginYearWeek">beginYearWeek: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">将指定时间计算时间偏移后转换为年周格式,如16W22
-</p>
+      <p class="shortcomment cmt">将指定时间计算时间偏移后转换为年周格式,如16W22。
+</p><div class="fullcomment"><div class="comment cmt"><p>将指定时间计算时间偏移后转换为年周格式,如16W22。
+</p></div><dl class="paramcmts block"><dt class="param">sourceTime</dt><dd class="cmt"><p>源日期时间字符串。</p></dd><dt class="param">timePattern</dt><dd class="cmt"><p>日期时间格式化字符串。</p></dd><dt class="param">yearOffset</dt><dd class="cmt"><p>年偏移量。</p></dd><dt class="param">monthOffset</dt><dd class="cmt"><p>月偏移量。</p></dd><dt class="param">dayOffset</dt><dd class="cmt"><p>日偏移量。</p></dd><dt class="param">beginYearWeek</dt><dd class="cmt"><p>是否需要是年周开始。
+</p></dd><dt>returns</dt><dd class="cmt"><p>年周格式的字符串。
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -321,7 +332,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#format" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#format" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="format(date:java.util.Date):String"></a>
       <a id="format(Date):String"></a>
       <h4 class="signature">
@@ -333,8 +344,13 @@
         <span class="name">format</span><span class="params">(<span name="date">date: <span class="extype" name="java.util.Date">Date</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#fullTimeFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将日期对象格式化为日期时间字符串。
+</p><div class="fullcomment"><div class="comment cmt"><p>将日期对象格式化为日期时间字符串。
+</p></div><dl class="paramcmts block"><dt class="param">date</dt><dd class="cmt"><p>日期对象
+</p></dd><dt>returns</dt><dd class="cmt"><p>日期时间字符串。
+</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>DateTimeUtil.NORMAL_DATETIME_FORMAT
+</p></span></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#fullTimeFormat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fullTimeFormat(sourceTime:String,timePattern:String,yearOffset:Int,monthOffset:Int,dayOffset:Int,hourOffset:Int,minuteOffset:Int,secondOffset:Int,destTimePattern:String):String"></a>
       <a id="fullTimeFormat(String,String,Int,Int,Int,Int,Int,Int,String):String"></a>
       <h4 class="signature">
@@ -346,8 +362,11 @@
         <span class="name">fullTimeFormat</span><span class="params">(<span name="sourceTime">sourceTime: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="timePattern">timePattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="yearOffset">yearOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="monthOffset">monthOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="dayOffset">dayOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="hourOffset">hourOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="minuteOffset">minuteOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="secondOffset">secondOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="destTimePattern">destTimePattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">将指定时间计算时间偏移后转换为指定格式
-</p>
+      <p class="shortcomment cmt">将指定时间计算时间偏移后转换为指定格式。
+</p><div class="fullcomment"><div class="comment cmt"><p>将指定时间计算时间偏移后转换为指定格式。
+</p></div><dl class="paramcmts block"><dt class="param">sourceTime</dt><dd class="cmt"><p>源日期时间字符串。</p></dd><dt class="param">timePattern</dt><dd class="cmt"><p>源日期时间格式化字符串。</p></dd><dt class="param">yearOffset</dt><dd class="cmt"><p>年偏移量。</p></dd><dt class="param">monthOffset</dt><dd class="cmt"><p>月偏移量。</p></dd><dt class="param">dayOffset</dt><dd class="cmt"><p>日偏移量。</p></dd><dt class="param">hourOffset</dt><dd class="cmt"><p>小时偏移量。</p></dd><dt class="param">minuteOffset</dt><dd class="cmt"><p>分钟偏移量。</p></dd><dt class="param">secondOffset</dt><dd class="cmt"><p>秒偏移量。</p></dd><dt class="param">destTimePattern</dt><dd class="cmt"><p>目标日期时间格式化字符串。
+</p></dd><dt>returns</dt><dd class="cmt"><p>目标日期时间字符串。
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -375,7 +394,8 @@
       </h4>
       <p class="shortcomment cmt">获取当前年当前周的当前时间
 </p><div class="fullcomment"><div class="comment cmt"><p>获取当前年当前周的当前时间
-</p></div><dl class="paramcmts block"><dt class="param">year</dt><dd class="cmt"><p>指定年</p></dd><dt class="param">week</dt><dd class="cmt"><p>指定周</p></dd><dt>returns</dt><dd class="cmt"><p>指定年指定周的当前时间
+</p></div><dl class="paramcmts block"><dt class="param">year</dt><dd class="cmt"><p>指定年</p></dd><dt class="param">week</dt><dd class="cmt"><p>指定周
+</p></dd><dt>returns</dt><dd class="cmt"><p>指定年指定周的当前时间
 </p></dd></dl></div>
     </li><li name="com.avcdata.etl.common.util.DateTimeUtil#getFirstDayOfWeek" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getFirstDayOfWeek(date:java.util.Date):java.util.Date"></a>
@@ -391,7 +411,8 @@
       </h4>
       <p class="shortcomment cmt">获取当前时间所在周的开始日期
 </p><div class="fullcomment"><div class="comment cmt"><p>获取当前时间所在周的开始日期
-</p></div><dl class="paramcmts block"><dt class="param">date</dt><dd class="cmt"><p>当前时间</p></dd><dt>returns</dt><dd class="cmt"><p>当前时间的周开始日期
+</p></div><dl class="paramcmts block"><dt class="param">date</dt><dd class="cmt"><p>当前时间
+</p></dd><dt>returns</dt><dd class="cmt"><p>当前时间的周开始日期
 </p></dd></dl></div>
     </li><li name="com.avcdata.etl.common.util.DateTimeUtil#getFirstDayOfWeek" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getFirstDayOfWeek(year:Int,week:Int):java.util.Date"></a>
@@ -407,7 +428,8 @@
       </h4>
       <p class="shortcomment cmt">获取某年的第几周的开始日期
 </p><div class="fullcomment"><div class="comment cmt"><p>获取某年的第几周的开始日期
-</p></div><dl class="paramcmts block"><dt class="param">year</dt><dd class="cmt"><p>指定的年</p></dd><dt class="param">week</dt><dd class="cmt"><p>指定的周</p></dd><dt>returns</dt><dd class="cmt"><p>指定年指定周的开始日期
+</p></div><dl class="paramcmts block"><dt class="param">year</dt><dd class="cmt"><p>指定的年</p></dd><dt class="param">week</dt><dd class="cmt"><p>指定的周
+</p></dd><dt>returns</dt><dd class="cmt"><p>指定年指定周的开始日期
 </p></dd></dl></div>
     </li><li name="com.avcdata.etl.common.util.DateTimeUtil#getLastDayOfWeek" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getLastDayOfWeek(date:java.util.Date):java.util.Date"></a>
@@ -423,7 +445,8 @@
       </h4>
       <p class="shortcomment cmt">获取当前时间所在周的结束日期
 </p><div class="fullcomment"><div class="comment cmt"><p>获取当前时间所在周的结束日期
-</p></div><dl class="paramcmts block"><dt class="param">date</dt><dd class="cmt"><p>当前日期</p></dd><dt>returns</dt><dd class="cmt"><p>所在周的结束日期
+</p></div><dl class="paramcmts block"><dt class="param">date</dt><dd class="cmt"><p>当前日期
+</p></dd><dt>returns</dt><dd class="cmt"><p>所在周的结束日期
 </p></dd></dl></div>
     </li><li name="com.avcdata.etl.common.util.DateTimeUtil#getLastDayOfWeek" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getLastDayOfWeek(year:Int,week:Int):java.util.Date"></a>
@@ -439,7 +462,8 @@
       </h4>
       <p class="shortcomment cmt">获取某年的第几周的结束日期
 </p><div class="fullcomment"><div class="comment cmt"><p>获取某年的第几周的结束日期
-</p></div><dl class="paramcmts block"><dt class="param">year</dt><dd class="cmt"><p>指定年</p></dd><dt class="param">week</dt><dd class="cmt"><p>指定周</p></dd><dt>returns</dt><dd class="cmt"><p>指定年指定周的结束日期
+</p></div><dl class="paramcmts block"><dt class="param">year</dt><dd class="cmt"><p>指定年</p></dd><dt class="param">week</dt><dd class="cmt"><p>指定周
+</p></dd><dt>returns</dt><dd class="cmt"><p>指定年指定周的结束日期
 </p></dd></dl></div>
     </li><li name="com.avcdata.etl.common.util.DateTimeUtil#getMaxWeekNumOfYear" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getMaxWeekNumOfYear(year:Int):Int"></a>
@@ -455,7 +479,8 @@
       </h4>
       <p class="shortcomment cmt">获取当前时间所在年的最大周数
 </p><div class="fullcomment"><div class="comment cmt"><p>获取当前时间所在年的最大周数
-</p></div><dl class="paramcmts block"><dt class="param">year</dt><dd class="cmt"><p>所在年</p></dd><dt>returns</dt><dd class="cmt"><p>所在年的最大周
+</p></div><dl class="paramcmts block"><dt class="param">year</dt><dd class="cmt"><p>所在年
+</p></dd><dt>returns</dt><dd class="cmt"><p>所在年的最大周
 </p></dd></dl></div>
     </li><li name="com.avcdata.etl.common.util.DateTimeUtil#getWeekOfYear" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getWeekOfYear(date:java.util.Date):Int"></a>
@@ -471,7 +496,8 @@
       </h4>
       <p class="shortcomment cmt">获取当前时间所在年的周数
 </p><div class="fullcomment"><div class="comment cmt"><p>获取当前时间所在年的周数
-</p></div><dl class="paramcmts block"><dt class="param">date</dt><dd class="cmt"><p>当前时间</p></dd><dt>returns</dt><dd class="cmt"><p>当前时间的周数
+</p></div><dl class="paramcmts block"><dt class="param">date</dt><dd class="cmt"><p>当前时间
+</p></dd><dt>returns</dt><dd class="cmt"><p>当前时间的周数
 </p></dd></dl></div>
     </li><li name="com.avcdata.etl.common.util.DateTimeUtil#halfYearMonth4LastDayOfWeek" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="halfYearMonth4LastDayOfWeek(yearWeek:String):String"></a>
@@ -487,7 +513,8 @@
       </h4>
       <p class="shortcomment cmt">获取周度最后一天的年月信息
 </p><div class="fullcomment"><div class="comment cmt"><p>获取周度最后一天的年月信息
-</p></div><dl class="paramcmts block"><dt class="param">yearWeek</dt><dd class="cmt"><p>年周信息</p></dd><dt>returns</dt><dd class="cmt"><p>年月信息
+</p></div><dl class="paramcmts block"><dt class="param">yearWeek</dt><dd class="cmt"><p>年周信息
+</p></dd><dt>returns</dt><dd class="cmt"><p>年月信息
 </p></dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -554,7 +581,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#parse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#parse" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="parse(dt:String):java.util.Date"></a>
       <a id="parse(String):Date"></a>
       <h4 class="signature">
@@ -566,8 +593,13 @@
         <span class="name">parse</span><span class="params">(<span name="dt">dt: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.util.Date">Date</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#parseWithZone" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将日期时间字符串转换为Date对象。
+</p><div class="fullcomment"><div class="comment cmt"><p>将日期时间字符串转换为Date对象。
+</p></div><dl class="paramcmts block"><dt class="param">dt</dt><dd class="cmt"><p>日期时间字符串。
+</p></dd><dt>returns</dt><dd class="cmt"><p>Date对象(若转换失败,则返回null)。
+</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>DateTimeUtil.NORMAL_DATETIME_FORMAT
+</p></span></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#parseWithZone" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="parseWithZone(dt:String):String"></a>
       <a id="parseWithZone(String):String"></a>
       <h4 class="signature">
@@ -579,8 +611,13 @@
         <span class="name">parseWithZone</span><span class="params">(<span name="dt">dt: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#standardizedDateTime" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将带有时区信息的日期时间字符串转换为日期对象。
+</p><div class="fullcomment"><div class="comment cmt"><p>将带有时区信息的日期时间字符串转换为日期对象。
+</p></div><dl class="paramcmts block"><dt class="param">dt</dt><dd class="cmt"><p>带时区的日期时间字符串。
+</p></dd><dt>returns</dt><dd class="cmt"><p>日期对象。
+</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>DateTimeUtil.TIME_WITH_ZONE_FORMAT
+</p></span></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#standardizedDateTime" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="standardizedDateTime(dateTimeStr:String):Option[String]"></a>
       <a id="standardizedDateTime(String):Option[String]"></a>
       <h4 class="signature">
@@ -592,7 +629,11 @@
         <span class="name">standardizedDateTime</span><span class="params">(<span name="dateTimeStr">dateTimeStr: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">将非标准的日期时间格式化为标准的日期时间格式(yyyy-MM-dd HH:mm:ss)。
+</p><div class="fullcomment"><div class="comment cmt"><p>将非标准的日期时间格式化为标准的日期时间格式(yyyy-MM-dd HH:mm:ss)。
+</p></div><dl class="paramcmts block"><dt class="param">dateTimeStr</dt><dd class="cmt"><p>日期时间字符串。
+</p></dd><dt>returns</dt><dd class="cmt"><p>标准的日期时间字符串。
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -606,7 +647,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeFormat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="timeFormat(sourceTime:String,timePattern:String,yearOffset:Int,monthOffset:Int,dayOffset:Int,destTimePattern:String):String"></a>
       <a id="timeFormat(String,String,Int,Int,Int,String):String"></a>
       <h4 class="signature">
@@ -618,9 +659,12 @@
         <span class="name">timeFormat</span><span class="params">(<span name="sourceTime">sourceTime: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="timePattern">timePattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="yearOffset">yearOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="monthOffset">monthOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="dayOffset">dayOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="destTimePattern">destTimePattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">将指定时间计算时间偏移后转换为指定格式
-</p>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToBeginYearWeek" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将指定日期计算偏移后转换为指定格式。
+</p><div class="fullcomment"><div class="comment cmt"><p>将指定日期计算偏移后转换为指定格式。
+</p></div><dl class="paramcmts block"><dt class="param">sourceTime</dt><dd class="cmt"><p>源日期字符串。</p></dd><dt class="param">timePattern</dt><dd class="cmt"><p>源日期格式化字符串。</p></dd><dt class="param">yearOffset</dt><dd class="cmt"><p>年偏移量。</p></dd><dt class="param">monthOffset</dt><dd class="cmt"><p>月偏移量。</p></dd><dt class="param">dayOffset</dt><dd class="cmt"><p>日偏移量。</p></dd><dt class="param">destTimePattern</dt><dd class="cmt"><p>目标日期格式化字符串。
+</p></dd><dt>returns</dt><dd class="cmt"><p>目标日期字符串。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToBeginYearWeek" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="timeToBeginYearWeek(sourceTime:String,timePattern:String):String"></a>
       <a id="timeToBeginYearWeek(String,String):String"></a>
       <h4 class="signature">
@@ -632,9 +676,12 @@
         <span class="name">timeToBeginYearWeek</span><span class="params">(<span name="sourceTime">sourceTime: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="timePattern">timePattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">将指定时间转换为本年开始YearWWeek格式,例如16W01
-</p>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToMonthEnd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将指定时间转换为本年开始YearWWeek格式,例如16W01。
+</p><div class="fullcomment"><div class="comment cmt"><p>将指定时间转换为本年开始YearWWeek格式,例如16W01。
+</p></div><dl class="paramcmts block"><dt class="param">sourceTime</dt><dd class="cmt"><p>源日期时间字符串。</p></dd><dt class="param">timePattern</dt><dd class="cmt"><p>日期时间格式化字符串。
+</p></dd><dt>returns</dt><dd class="cmt"><p>本年开始的年周字符串。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToMonthEnd" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="timeToMonthEnd(sourceTime:String,timePattern:String,monthOffset:Int,destTimePattern:String):String"></a>
       <a id="timeToMonthEnd(String,String,Int,String):String"></a>
       <h4 class="signature">
@@ -646,9 +693,12 @@
         <span class="name">timeToMonthEnd</span><span class="params">(<span name="sourceTime">sourceTime: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="timePattern">timePattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="monthOffset">monthOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="destTimePattern">destTimePattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">获取指定时间偏移量的当前月结束时间,使用指定时间格式化
-</p>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToMonthStart" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">获取指定时间偏移量的当前月结束时间,使用指定时间格式化。
+</p><div class="fullcomment"><div class="comment cmt"><p>获取指定时间偏移量的当前月结束时间,使用指定时间格式化。
+</p></div><dl class="paramcmts block"><dt class="param">sourceTime</dt><dd class="cmt"><p>日期时间字符串。</p></dd><dt class="param">timePattern</dt><dd class="cmt"><p>日期时间格式化字符串。</p></dd><dt class="param">monthOffset</dt><dd class="cmt"><p>月偏移量。</p></dd><dt class="param">destTimePattern</dt><dd class="cmt"><p>目标日期时间字符串。
+</p></dd><dt>returns</dt><dd class="cmt"><p>偏移后的月度的结束时间。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToMonthStart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="timeToMonthStart(sourceTime:String,timePattern:String,monthOffset:Int,destTimePattern:String):String"></a>
       <a id="timeToMonthStart(String,String,Int,String):String"></a>
       <h4 class="signature">
@@ -660,9 +710,12 @@
         <span class="name">timeToMonthStart</span><span class="params">(<span name="sourceTime">sourceTime: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="timePattern">timePattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="monthOffset">monthOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="destTimePattern">destTimePattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">获取指定时间偏移量的当前月开始时间,使用指定时间格式化
-</p>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToWeek" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">获取指定时间偏移量的当前月开始时间,使用指定时间格式化。
+</p><div class="fullcomment"><div class="comment cmt"><p>获取指定时间偏移量的当前月开始时间,使用指定时间格式化。
+</p></div><dl class="paramcmts block"><dt class="param">sourceTime</dt><dd class="cmt"><p>日期时间字符串。</p></dd><dt class="param">timePattern</dt><dd class="cmt"><p>日期时间格式化字符串。</p></dd><dt class="param">monthOffset</dt><dd class="cmt"><p>月偏移量。</p></dd><dt class="param">destTimePattern</dt><dd class="cmt"><p>目标日期时间字符串。
+</p></dd><dt>returns</dt><dd class="cmt"><p>偏移后的月度的开始时间。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToWeek" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="timeToWeek(sourceTime:String,timePattern:String,weekOffset:Int):String"></a>
       <a id="timeToWeek(String,String,Int):String"></a>
       <h4 class="signature">
@@ -674,9 +727,12 @@
         <span class="name">timeToWeek</span><span class="params">(<span name="sourceTime">sourceTime: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="timePattern">timePattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="weekOffset">weekOffset: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">将指定时间转换为一年中的第几周
-</p>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToWeekEnd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将指定时间转换为一年中的第几周。
+</p><div class="fullcomment"><div class="comment cmt"><p>将指定时间转换为一年中的第几周。
+</p></div><dl class="paramcmts block"><dt class="param">sourceTime</dt><dd class="cmt"><p>指定日期时间字符串。</p></dd><dt class="param">timePattern</dt><dd class="cmt"><p>日期时间格式化字符串。</p></dd><dt class="param">weekOffset</dt><dd class="cmt"><p>周偏移量。
+</p></dd><dt>returns</dt><dd class="cmt"><p>一年中的周度,比如06。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToWeekEnd" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="timeToWeekEnd(sourceTime:String,timePattern:String,dayOffset:Int,destTimePattern:String):String"></a>
       <a id="timeToWeekEnd(String,String,Int,String):String"></a>
       <h4 class="signature">
@@ -688,9 +744,12 @@
         <span class="name">timeToWeekEnd</span><span class="params">(<span name="sourceTime">sourceTime: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="timePattern">timePattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dayOffset">dayOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="destTimePattern">destTimePattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">获取指定时间偏移量的当前周结束时间,使用指定时间格式化
-</p>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToWeekStart" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">获取指定时间偏移量的当前周结束时间,使用指定时间格式化。
+</p><div class="fullcomment"><div class="comment cmt"><p>获取指定时间偏移量的当前周结束时间,使用指定时间格式化。
+</p></div><dl class="paramcmts block"><dt class="param">sourceTime</dt><dd class="cmt"><p>日期时间字符串。</p></dd><dt class="param">timePattern</dt><dd class="cmt"><p>日期时间格式化字符串。</p></dd><dt class="param">dayOffset</dt><dd class="cmt"><p>日偏移量。</p></dd><dt class="param">destTimePattern</dt><dd class="cmt"><p>目标日期时间字符串。
+</p></dd><dt>returns</dt><dd class="cmt"><p>偏移后的周度的结束时间。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToWeekStart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="timeToWeekStart(sourceTime:String,timePattern:String,dayOffset:Int,destTimePattern:String):String"></a>
       <a id="timeToWeekStart(String,String,Int,String):String"></a>
       <h4 class="signature">
@@ -702,9 +761,12 @@
         <span class="name">timeToWeekStart</span><span class="params">(<span name="sourceTime">sourceTime: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="timePattern">timePattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dayOffset">dayOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="destTimePattern">destTimePattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">获取指定时间偏移量的当前周开始时间,使用指定时间格式化
-</p>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToYearWeek" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">获取指定时间偏移量的当前周开始时间,使用指定时间格式化。
+</p><div class="fullcomment"><div class="comment cmt"><p>获取指定时间偏移量的当前周开始时间,使用指定时间格式化。
+</p></div><dl class="paramcmts block"><dt class="param">sourceTime</dt><dd class="cmt"><p>日期时间字符串。</p></dd><dt class="param">timePattern</dt><dd class="cmt"><p>日期时间格式化字符串。</p></dd><dt class="param">dayOffset</dt><dd class="cmt"><p>日偏移量。</p></dd><dt class="param">destTimePattern</dt><dd class="cmt"><p>目标日期时间字符串。
+</p></dd><dt>returns</dt><dd class="cmt"><p>偏移后的周度的开始时间。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#timeToYearWeek" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="timeToYearWeek(sourceTime:String,timePattern:String,weekOffset:Int):String"></a>
       <a id="timeToYearWeek(String,String,Int):String"></a>
       <h4 class="signature">
@@ -716,8 +778,11 @@
         <span class="name">timeToYearWeek</span><span class="params">(<span name="sourceTime">sourceTime: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="timePattern">timePattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="weekOffset">weekOffset: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">将指定时间转换为YearWWeek格式,例如16W21
-</p>
+      <p class="shortcomment cmt">将指定时间转换为YearWWeek格式,例如16W21。
+</p><div class="fullcomment"><div class="comment cmt"><p>将指定时间转换为YearWWeek格式,例如16W21。
+</p></div><dl class="paramcmts block"><dt class="param">sourceTime</dt><dd class="cmt"><p>指定日期时间字符串。</p></dd><dt class="param">timePattern</dt><dd class="cmt"><p>日期时间格式化字符串。</p></dd><dt class="param">weekOffset</dt><dd class="cmt"><p>周偏移量。
+</p></dd><dt>returns</dt><dd class="cmt"><p>一年中的周度,比如17W06。
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
@@ -788,7 +853,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#yearMonth" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#yearMonth" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="yearMonth(srcYearMonth:String,yearOffset:Int,monthOffset:Int):String"></a>
       <a id="yearMonth(String,Int,Int):String"></a>
       <h4 class="signature">
@@ -800,9 +865,12 @@
         <span class="name">yearMonth</span><span class="params">(<span name="srcYearMonth">srcYearMonth: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="yearOffset">yearOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="monthOffset">monthOffset: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">月年偏移计算
-</p>
-    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#yearWeek" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">月年偏移计算。
+</p><div class="fullcomment"><div class="comment cmt"><p>月年偏移计算。
+</p></div><dl class="paramcmts block"><dt class="param">srcYearMonth</dt><dd class="cmt"><p>源年月字符串。</p></dd><dt class="param">yearOffset</dt><dd class="cmt"><p>年偏移量。</p></dd><dt class="param">monthOffset</dt><dd class="cmt"><p>月偏移量。
+</p></dd><dt>returns</dt><dd class="cmt"><p>偏移后的年月字符串。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DateTimeUtil#yearWeek" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="yearWeek(srcYearWeek:String,yearOffset:Int,weekOffset:Int):String"></a>
       <a id="yearWeek(String,Int,Int):String"></a>
       <h4 class="signature">
@@ -814,8 +882,11 @@
         <span class="name">yearWeek</span><span class="params">(<span name="srcYearWeek">srcYearWeek: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="yearOffset">yearOffset: <span class="extype" name="scala.Int">Int</span></span>, <span name="weekOffset">weekOffset: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">周偏移计算
-</p>
+      <p class="shortcomment cmt">周偏移计算。
+</p><div class="fullcomment"><div class="comment cmt"><p>周偏移计算。
+</p></div><dl class="paramcmts block"><dt class="param">srcYearWeek</dt><dd class="cmt"><p>源年周字符串。</p></dd><dt class="param">yearOffset</dt><dd class="cmt"><p>年偏移量。</p></dd><dt class="param">weekOffset</dt><dd class="cmt"><p>周偏移量。
+</p></dd><dt>returns</dt><dd class="cmt"><p>偏移后的年周字符串。
+</p></dd></dl></div>
     </li></ol>
             </div>
 

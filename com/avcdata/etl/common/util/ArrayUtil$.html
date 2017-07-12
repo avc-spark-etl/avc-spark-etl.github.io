@@ -39,7 +39,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>处理数据的UDF</p><p>Author   : wangxp</p><p>DateTime : 16/8/12 12:40
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>处理数组的工具类。</p><p>Author   : wangxp</p><p>DateTime : 16/8/12 12:40
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
@@ -151,7 +151,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.ArrayUtil#addToArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.ArrayUtil#addToArray" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="addToArray(sourceElement:String,destArray:Seq[String]):Seq[String]"></a>
       <a id="addToArray(String,Seq[String]):Seq[String]"></a>
       <h4 class="signature">
@@ -163,8 +163,12 @@
         <span class="name">addToArray</span><span class="params">(<span name="sourceElement">sourceElement: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="destArray">destArray: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.util.ArrayUtil#arrayFilterEmptyValue" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将字符串附加到数组的尾部。
+</p><div class="fullcomment"><div class="comment cmt"><p>将字符串附加到数组的尾部。
+</p></div><dl class="paramcmts block"><dt class="param">sourceElement</dt><dd class="cmt"><p>需要附加的字符串。</p></dd><dt class="param">destArray</dt><dd class="cmt"><p>目标数组。
+</p></dd><dt>returns</dt><dd class="cmt"><p>附加结果数组。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.ArrayUtil#arrayFilterEmptyValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="arrayFilterEmptyValue(values:Seq[String]):Seq[String]"></a>
       <a id="arrayFilterEmptyValue(Seq[String]):Seq[String]"></a>
       <h4 class="signature">
@@ -176,7 +180,11 @@
         <span class="name">arrayFilterEmptyValue</span><span class="params">(<span name="values">values: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">过滤数据的空值,包含null值和去空格后为空串的值。
+</p><div class="fullcomment"><div class="comment cmt"><p>过滤数据的空值,包含null值和去空格后为空串的值。
+</p></div><dl class="paramcmts block"><dt class="param">values</dt><dd class="cmt"><p>需要过滤的序列。
+</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -209,7 +217,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.ArrayUtil#containsLike" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.ArrayUtil#containsLike" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="containsLike(values:Seq[String],regexStr:String):Boolean"></a>
       <a id="containsLike(Seq[String],String):Boolean"></a>
       <h4 class="signature">
@@ -221,8 +229,12 @@
         <span class="name">containsLike</span><span class="params">(<span name="values">values: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="regexStr">regexStr: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.util.ArrayUtil#containsSubstr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">判断数组各元素的子串中是否包含指定的正则字符串表达式。
+</p><div class="fullcomment"><div class="comment cmt"><p>判断数组各元素的子串中是否包含指定的正则字符串表达式。
+</p></div><dl class="paramcmts block"><dt class="param">values</dt><dd class="cmt"><p>原始数组元素列表。</p></dd><dt class="param">regexStr</dt><dd class="cmt"><p>需要匹配的正则字符串表达式。
+</p></dd><dt>returns</dt><dd class="cmt"><p>匹配结果:true为匹配上,false为未匹配上。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.ArrayUtil#containsSubstr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="containsSubstr(values:Seq[String],substr:String):Boolean"></a>
       <a id="containsSubstr(Seq[String],String):Boolean"></a>
       <h4 class="signature">
@@ -234,7 +246,11 @@
         <span class="name">containsSubstr</span><span class="params">(<span name="values">values: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="substr">substr: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">判断数组各元素的子串中是否包含指定的字符串。
+</p><div class="fullcomment"><div class="comment cmt"><p>判断数组各元素的子串中是否包含指定的字符串。
+</p></div><dl class="paramcmts block"><dt class="param">values</dt><dd class="cmt"><p>原始数组元素列表。</p></dd><dt class="param">substr</dt><dd class="cmt"><p>需要匹配的字符串。
+</p></dd><dt>returns</dt><dd class="cmt"><p>匹配结果:true为匹配上,false为未匹配上。
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
