@@ -96,7 +96,8 @@
         <span class="name">Closable</span><span class="result"> = <span class="extype" name="scala.AnyRef">AnyRef</span> { def close(): Unit }</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Closable鸭子类型,凡对象中有close方法的对象,皆可使用此模式。
+</p>
     </li></ol>
             </div>
 
@@ -364,7 +365,7 @@ the resource as a parameter and returns a Future.</p>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.avcdata.etl.common.pattern.LoanPattern#using" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.pattern.LoanPattern#using" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="using[R&lt;:LoanPattern.this.Closable,A](resource:R)(f:R=&gt;A):A"></a>
       <a id="using[R&lt;:Closable,A](R)((R)⇒A):A"></a>
       <h4 class="signature">
@@ -376,7 +377,11 @@ the resource as a parameter and returns a Future.</p>
         <span class="name">using</span><span class="tparams">[<span name="R">R &lt;: <a href="#Closable=AnyRef{defclose():Unit}" class="extmbr" name="com.avcdata.etl.common.pattern.LoanPattern.Closable">Closable</a></span>, <span name="A">A</span>]</span><span class="params">(<span name="resource">resource: <span class="extype" name="com.avcdata.etl.common.pattern.LoanPattern.using.R">R</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="com.avcdata.etl.common.pattern.LoanPattern.using.R">R</span>) ⇒ <span class="extype" name="com.avcdata.etl.common.pattern.LoanPattern.using.A">A</span></span>)</span><span class="result">: <span class="extype" name="com.avcdata.etl.common.pattern.LoanPattern.using.A">A</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">使用可关闭的资源对象。
+</p><div class="fullcomment"><div class="comment cmt"><p>使用可关闭的资源对象。
+</p></div><dl class="paramcmts block"><dt class="param">resource</dt><dd class="cmt"><p>可关闭的资源,</p></dd><dt class="param">f</dt><dd class="cmt"><p>资源操作函数
+</p></dd><dt>returns</dt><dd class="cmt"><p>f函数操作的返回结果
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
