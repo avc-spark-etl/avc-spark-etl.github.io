@@ -39,7 +39,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>可用时间基础</p><p>Author   : wangxp</p><p>DateTime : 2017/3/23 13:50
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>可用时间获取基类。</p><p>Author   : wangxp</p><p>DateTime : 2017/3/23 13:50
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
@@ -101,7 +101,9 @@
       </h4>
       <p class="shortcomment cmt">从数据库中获取最大时间周期值
 </p><div class="fullcomment"><div class="comment cmt"><p>从数据库中获取最大时间周期值
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">conn</dt><dd class="cmt"><p>数据库连接</p></dd><dt class="param">tblName</dt><dd class="cmt"><p>表名称</p></dd><dt class="param">fieldName</dt><dd class="cmt"><p>字段名称</p></dd><dt class="param">dbName</dt><dd class="cmt"><p>数据库名称</p></dd><dt class="param">category</dt><dd class="cmt"><p>品类名称
+</p></dd><dt>returns</dt><dd class="cmt"><p>最大时间周期
+</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li></ol>
             </div>
 
@@ -199,7 +201,8 @@
       </h4>
       <p class="shortcomment cmt">获取最大时间周期
 </p><div class="fullcomment"><div class="comment cmt"><p>获取最大时间周期
-</p></div><dl class="paramcmts block"><dt class="param">connUri</dt><dd class="cmt"><p>连接URI</p></dd><dt class="param">username</dt><dd class="cmt"><p>用户名</p></dd><dt class="param">password</dt><dd class="cmt"><p>密码</p></dd><dt class="param">dbName</dt><dd class="cmt"><p>数据库名称</p></dd><dt class="param">tblName</dt><dd class="cmt"><p>表名称</p></dd><dt class="param">fieldName</dt><dd class="cmt"><p>字段名称</p></dd><dt class="param">category</dt><dd class="cmt"><p>品类名称</p></dd><dt>returns</dt><dd class="cmt"><p>最大时间周期
+</p></div><dl class="paramcmts block"><dt class="param">connUri</dt><dd class="cmt"><p>连接URI</p></dd><dt class="param">username</dt><dd class="cmt"><p>用户名</p></dd><dt class="param">password</dt><dd class="cmt"><p>密码</p></dd><dt class="param">dbName</dt><dd class="cmt"><p>数据库名称</p></dd><dt class="param">tblName</dt><dd class="cmt"><p>表名称</p></dd><dt class="param">fieldName</dt><dd class="cmt"><p>字段名称</p></dd><dt class="param">category</dt><dd class="cmt"><p>品类名称
+</p></dd><dt>returns</dt><dd class="cmt"><p>最大时间周期
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="com.avcdata.etl.common.udf.AvailableTimePeriodBase#availableTimePeriods" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="availableTimePeriods:scala.collection.mutable.Map[String,String]"></a>
@@ -213,7 +216,9 @@
         <span class="name">availableTimePeriods</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+      <p class="shortcomment cmt">可用时间缓存。
+</p><div class="fullcomment"><div class="comment cmt"><p>可用时间缓存。
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -245,9 +250,10 @@
         <span class="name">correctMonth</span><span class="params">(<span name="month">month: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">修正月份值
-</p><div class="fullcomment"><div class="comment cmt"><p>修正月份值
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+      <p class="shortcomment cmt">修正月份值(yy.</p><div class="fullcomment"><div class="comment cmt"><p>修正月份值(yy.MM)。</p><p>若需要处理的月份值大于或者等于当前月份值,则取当前月份值减1月,否则为当前需要处理的月份值。
+</p></div><dl class="paramcmts block"><dt class="param">month</dt><dd class="cmt"><p>需要处理的月份。
+</p></dd><dt>returns</dt><dd class="cmt"><p>修正后的月份值。
+</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="com.avcdata.etl.common.udf.AvailableTimePeriodBase#correctWeek" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="correctWeek(week:String):String"></a>
       <a id="correctWeek(String):String"></a>
@@ -260,9 +266,10 @@
         <span class="name">correctWeek</span><span class="params">(<span name="week">week: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">修正周度值
-</p><div class="fullcomment"><div class="comment cmt"><p>修正周度值
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+      <p class="shortcomment cmt">修正月份值(yy.</p><div class="fullcomment"><div class="comment cmt"><p>修正月份值(yy.WW)。</p><p>若需要处理的周度值大于或者等于当前周度值,则取当前周度值减1周,否则为当前需要处理的周度值。
+</p></div><dl class="paramcmts block"><dt class="param">week</dt><dd class="cmt"><p>需要处理的月份。
+</p></dd><dt>returns</dt><dd class="cmt"><p>修正后的周度值。
+</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>

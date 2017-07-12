@@ -39,7 +39,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>自定义UDF注册扩展接口</p><p>Author   : wangxp</p><p>DateTime : 2017/6/20 10:28
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Spark4HiveQLExecutor的UDF加载。</p><p>主要目的用于在执行HQL脚本文件逻辑之前,加载自定义的UDF。</p><p>此接口使用遵从于Java的SPI规范。</p><p>Author   : wangxp</p><p>DateTime : 2017/6/20 10:28
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
@@ -84,7 +84,7 @@
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="com.avcdata.etl.common.udf.CustomUDFRegister#register" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="com.avcdata.etl.common.udf.CustomUDFRegister#register" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="register(hiveContext:org.apache.spark.sql.hive.HiveContext):Unit"></a>
       <a id="register(HiveContext):Unit"></a>
       <h4 class="signature">
@@ -96,7 +96,10 @@
         <span class="name">register</span><span class="params">(<span name="hiveContext">hiveContext: <span class="extype" name="org.apache.spark.sql.hive.HiveContext">HiveContext</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">注册UDF入口。
+</p><div class="fullcomment"><div class="comment cmt"><p>注册UDF入口。
+</p></div><dl class="paramcmts block"><dt class="param">hiveContext</dt><dd class="cmt"><p>HiveContext实例化对象。
+</p></dd></dl></div>
     </li></ol>
             </div>
 
