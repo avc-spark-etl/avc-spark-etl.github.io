@@ -202,7 +202,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.DeSerialization#customSqlDateSer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.DeSerialization#customSqlDateSer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="customSqlDateSer(formats:net.liftweb.json.Formats):(PartialFunction[net.liftweb.json.JValue,java.sql.Date],PartialFunction[Any,net.liftweb.json.JValue])"></a>
       <a id="customSqlDateSer(Formats):(PartialFunction[JValue,Date],PartialFunction[Any,JValue])"></a>
       <h4 class="signature">
@@ -214,8 +214,12 @@
         <span class="name">customSqlDateSer</span><span class="params">(<span name="formats">formats: <span class="extype" name="net.liftweb.json.Formats">Formats</span></span>)</span><span class="result">: (<span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="net.liftweb.json.JValue">JValue</span>, <span class="extype" name="java.sql.Date">Date</span>], <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="net.liftweb.json.JValue">JValue</span>])</span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.util.DeSerialization#deserialize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">自定义的SQL DATE序列化函数。
+</p><div class="fullcomment"><div class="comment cmt"><p>自定义的SQL DATE序列化函数。
+</p></div><dl class="paramcmts block"><dt class="param">formats</dt><dd class="cmt"><p>格式化参数。
+</p></dd><dt>returns</dt><dd class="cmt"><p>(反序列化函数, 序列化函数)
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DeSerialization#deserialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deserialize[A](json:String)(implicitmf:scala.reflect.Manifest[A]):A"></a>
       <a id="deserialize[A](String)(Manifest[A]):A"></a>
       <h4 class="signature">
@@ -227,7 +231,11 @@
         <span class="name">deserialize</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="json">json: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mf">mf: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="com.avcdata.etl.common.util.DeSerialization.deserialize.A">A</span>]</span>)</span><span class="result">: <span class="extype" name="com.avcdata.etl.common.util.DeSerialization.deserialize.A">A</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">将JSON数据反序列化为指定对象。
+</p><div class="fullcomment"><div class="comment cmt"><p>将JSON数据反序列化为指定对象。
+</p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>反序列化目标类。
+</p></dd><dt class="param">json</dt><dd class="cmt"><p>需要反序列化的JSON字符串。</p></dd><dt>returns</dt><dd class="cmt"><p>反序列化目标对象。
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -254,7 +262,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.DeSerialization#extractFieldValue" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.DeSerialization#extractFieldValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="extractFieldValue[A](json:String,fieldName:String)(implicitmf:scala.reflect.Manifest[A]):A"></a>
       <a id="extractFieldValue[A](String,String)(Manifest[A]):A"></a>
       <h4 class="signature">
@@ -266,7 +274,11 @@
         <span class="name">extractFieldValue</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="json">json: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fieldName">fieldName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mf">mf: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="com.avcdata.etl.common.util.DeSerialization.extractFieldValue.A">A</span>]</span>)</span><span class="result">: <span class="extype" name="com.avcdata.etl.common.util.DeSerialization.extractFieldValue.A">A</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">抽取指定字段名称的值。
+</p><div class="fullcomment"><div class="comment cmt"><p>抽取指定字段名称的值。
+</p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>抽取字段的类型。
+</p></dd><dt class="param">json</dt><dd class="cmt"><p>目标JSON字符串。</p></dd><dt class="param">fieldName</dt><dd class="cmt"><p>需要抽取的字段名称。</p></dd><dt>returns</dt><dd class="cmt"><p>抽取字段的值。
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -377,7 +389,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.DeSerialization#removeField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.DeSerialization#removeField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="removeField(json:String,fieldName:String):String"></a>
       <a id="removeField(String,String):String"></a>
       <h4 class="signature">
@@ -389,8 +401,12 @@
         <span class="name">removeField</span><span class="params">(<span name="json">json: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fieldName">fieldName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.util.DeSerialization#serialize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">移除JSON中指定字段。
+</p><div class="fullcomment"><div class="comment cmt"><p>移除JSON中指定字段。
+</p></div><dl class="paramcmts block"><dt class="param">json</dt><dd class="cmt"><p>目标JSON字符串。</p></dd><dt class="param">fieldName</dt><dd class="cmt"><p>需要移除字段的名称。
+</p></dd><dt>returns</dt><dd class="cmt"><p>移除指定字段后的JSON字符串。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.DeSerialization#serialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="serialize(obj:AnyRef):String"></a>
       <a id="serialize(AnyRef):String"></a>
       <h4 class="signature">
@@ -402,7 +418,11 @@
         <span class="name">serialize</span><span class="params">(<span name="obj">obj: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">序列化对象为JSON字符串。
+</p><div class="fullcomment"><div class="comment cmt"><p>序列化对象为JSON字符串。
+</p></div><dl class="paramcmts block"><dt class="param">obj</dt><dd class="cmt"><p>需要序列化的对象。
+</p></dd><dt>returns</dt><dd class="cmt"><p>序列化对象后生成的JSON字符串。
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>

@@ -39,7 +39,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Kafka Broker工具</p><p>Author   : wangxp</p><p>DateTime : 2016/10/22 22:37
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Kafka Broker工具。</p><p>Author   : wangxp</p><p>DateTime : 2016/10/22 22:37
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
@@ -163,7 +163,8 @@
         <span class="name">KAFKA_TOPIC_OFFSET_TBL_NAME</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">存取KAFKA OFFSET的表名。
+</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -210,7 +211,8 @@
       </h4>
       <p class="shortcomment cmt">获取默认的Kafka配置
 </p><div class="fullcomment"><div class="comment cmt"><p>获取默认的Kafka配置
-</p></div><dl class="paramcmts block"><dt class="param">zookeeperAddress</dt><dd class="cmt"><p>zk的地址</p></dd><dt>returns</dt><dd class="cmt"><p>默认的Kafka配置
+</p></div><dl class="paramcmts block"><dt class="param">zookeeperAddress</dt><dd class="cmt"><p>zk的地址
+</p></dd><dt>returns</dt><dd class="cmt"><p>默认的Kafka配置
 </p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
@@ -257,7 +259,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.KafkaUtil#fromOffsets" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.KafkaUtil#fromOffsets" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fromOffsets(connectUri:String,username:String,password:String,topics:Set[String],zookeeperAddress:String):Option[Map[kafka.common.TopicAndPartition,Long]]"></a>
       <a id="fromOffsets(String,String,String,Set[String],String):Option[Map[TopicAndPartition,Long]]"></a>
       <h4 class="signature">
@@ -269,7 +271,11 @@
         <span class="name">fromOffsets</span><span class="params">(<span name="connectUri">connectUri: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="username">username: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="topics">topics: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="zookeeperAddress">zookeeperAddress: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="kafka.common.TopicAndPartition">TopicAndPartition</span>, <span class="extype" name="scala.Long">Long</span>]]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">从数据库中获取指定TOPIC的偏移量信息。
+</p><div class="fullcomment"><div class="comment cmt"><p>从数据库中获取指定TOPIC的偏移量信息。
+</p></div><dl class="paramcmts block"><dt class="param">connectUri</dt><dd class="cmt"><p>数据库连接URI。</p></dd><dt class="param">username</dt><dd class="cmt"><p>数据库用户名。</p></dd><dt class="param">password</dt><dd class="cmt"><p>数据库密码。</p></dd><dt class="param">topics</dt><dd class="cmt"><p>指定的TOPIC名称。</p></dd><dt class="param">zookeeperAddress</dt><dd class="cmt"><p>KAFKA BROKER的ZK配置。
+</p></dd><dt>returns</dt><dd class="cmt"><p>指定TOPIC的OFFSET值列表。
+</p></dd></dl></div>
     </li><li name="com.avcdata.etl.common.util.KafkaUtil#getBrokerList" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getBrokerList(zookeeperAddress:String):String"></a>
       <a id="getBrokerList(String):String"></a>
@@ -284,7 +290,8 @@
       </h4>
       <p class="shortcomment cmt">获取Kafka的Broker信息
 </p><div class="fullcomment"><div class="comment cmt"><p>获取Kafka的Broker信息
-</p></div><dl class="paramcmts block"><dt class="param">zookeeperAddress</dt><dd class="cmt"><p>ZK的地址</p></dd><dt>returns</dt><dd class="cmt"><p>Broker的信息
+</p></div><dl class="paramcmts block"><dt class="param">zookeeperAddress</dt><dd class="cmt"><p>ZK的地址
+</p></dd><dt>returns</dt><dd class="cmt"><p>Broker的信息
 </p></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
@@ -404,7 +411,8 @@
       </h4>
       <p class="shortcomment cmt">获取topic的分区数
 </p><div class="fullcomment"><div class="comment cmt"><p>获取topic的分区数
-</p></div><dl class="paramcmts block"><dt class="param">zookeeperAddress</dt><dd class="cmt"><p>ZK的地址</p></dd><dt class="param">topic</dt><dd class="cmt"><p>主题</p></dd><dt>returns</dt><dd class="cmt"><p>分区数
+</p></div><dl class="paramcmts block"><dt class="param">zookeeperAddress</dt><dd class="cmt"><p>ZK的地址</p></dd><dt class="param">topic</dt><dd class="cmt"><p>主题
+</p></dd><dt>returns</dt><dd class="cmt"><p>分区数
 </p></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>

@@ -214,7 +214,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.HdfsFileUtil#copy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.HdfsFileUtil#copy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="copy(srcPath:org.apache.hadoop.fs.Path,destPath:org.apache.hadoop.fs.Path,conf:org.apache.hadoop.conf.Configuration):Unit"></a>
       <a id="copy(Path,Path,Configuration):Unit"></a>
       <h4 class="signature">
@@ -226,9 +226,11 @@
         <span class="name">copy</span><span class="params">(<span name="srcPath">srcPath: <span class="extype" name="org.apache.hadoop.fs.Path">Path</span></span>, <span name="destPath">destPath: <span class="extype" name="org.apache.hadoop.fs.Path">Path</span></span>, <span name="conf">conf: <span class="extype" name="org.apache.hadoop.conf.Configuration">Configuration</span> = <span class="symbol"><span class="name"><a href="../../../../../org/package.html">new Configuration()</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">拷贝源文件至目标文件
-</p>
-    </li><li name="com.avcdata.etl.common.util.HdfsFileUtil#createDir" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">拷贝源文件至目标文件。
+</p><div class="fullcomment"><div class="comment cmt"><p>拷贝源文件至目标文件。
+</p></div><dl class="paramcmts block"><dt class="param">srcPath</dt><dd class="cmt"><p>源路径。</p></dd><dt class="param">destPath</dt><dd class="cmt"><p>目标路径。</p></dd><dt class="param">conf</dt><dd class="cmt"><p>Hadoop配置对象。
+</p></dd></dl></div>
+    </li><li name="com.avcdata.etl.common.util.HdfsFileUtil#createDir" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="createDir(dirPath:String,conf:org.apache.hadoop.conf.Configuration):Unit"></a>
       <a id="createDir(String,Configuration):Unit"></a>
       <h4 class="signature">
@@ -240,8 +242,10 @@
         <span class="name">createDir</span><span class="params">(<span name="dirPath">dirPath: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="conf">conf: <span class="extype" name="org.apache.hadoop.conf.Configuration">Configuration</span> = <span class="symbol"><span class="name"><a href="../../../../../org/package.html">new Configuration()</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">创建目录
-</p>
+      <p class="shortcomment cmt">创建目录。
+</p><div class="fullcomment"><div class="comment cmt"><p>创建目录。
+</p></div><dl class="paramcmts block"><dt class="param">dirPath</dt><dd class="cmt"><p>需要创建的目标路径字符串。</p></dd><dt class="param">conf</dt><dd class="cmt"><p>Hadoop配置对象。
+</p></dd></dl></div>
     </li><li name="com.avcdata.etl.common.util.HdfsFileUtil#createSnapshot" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="createSnapshot(path:String,conf:org.apache.hadoop.conf.Configuration):org.apache.hadoop.fs.Path"></a>
       <a id="createSnapshot(String,Configuration):Path"></a>
@@ -271,12 +275,12 @@
         <span class="name">delete</span><span class="params">(<span name="filePath">filePath: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="conf">conf: <span class="extype" name="org.apache.hadoop.conf.Configuration">Configuration</span> = <span class="symbol"><span class="name"><a href="../../../../../org/package.html">new Configuration()</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">删除文件
-</p><div class="fullcomment"><div class="comment cmt"><p>删除文件
-</p></div><dl class="paramcmts block"><dt class="param">filePath</dt><dd class="cmt"><p>文件路径</p></dd><dt class="param">conf</dt><dd class="cmt"><p>HDFS配置
-</p></dd><dt>returns</dt><dd class="cmt"><p>删除是否成功
+      <p class="shortcomment cmt">删除文件。
+</p><div class="fullcomment"><div class="comment cmt"><p>删除文件。
+</p></div><dl class="paramcmts block"><dt class="param">filePath</dt><dd class="cmt"><p>文件路径。</p></dd><dt class="param">conf</dt><dd class="cmt"><p>HDFS配置。
+</p></dd><dt>returns</dt><dd class="cmt"><p>删除是否成功。
 </p></dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.HdfsFileUtil#deletePath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.HdfsFileUtil#deletePath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deletePath(filePath:org.apache.hadoop.fs.Path,conf:org.apache.hadoop.conf.Configuration):Boolean"></a>
       <a id="deletePath(Path,Configuration):Boolean"></a>
       <h4 class="signature">
@@ -288,7 +292,11 @@
         <span class="name">deletePath</span><span class="params">(<span name="filePath">filePath: <span class="extype" name="org.apache.hadoop.fs.Path">Path</span></span>, <span name="conf">conf: <span class="extype" name="org.apache.hadoop.conf.Configuration">Configuration</span> = <span class="symbol"><span class="name"><a href="../../../../../org/package.html">new Configuration()</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">删除文件。
+</p><div class="fullcomment"><div class="comment cmt"><p>删除文件。
+</p></div><dl class="paramcmts block"><dt class="param">filePath</dt><dd class="cmt"><p>文件路径。</p></dd><dt class="param">conf</dt><dd class="cmt"><p>HDFS配置。
+</p></dd><dt>returns</dt><dd class="cmt"><p>删除是否成功。
+</p></dd></dl></div>
     </li><li name="com.avcdata.etl.common.util.HdfsFileUtil#deleteSnapshot" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deleteSnapshot(path:String,conf:org.apache.hadoop.conf.Configuration):Unit"></a>
       <a id="deleteSnapshot(String,Configuration):Unit"></a>
@@ -380,7 +388,7 @@
 </p></div><dl class="paramcmts block"><dt class="param">filePath</dt><dd class="cmt"><p>文件夹路径</p></dd><dt class="param">conf</dt><dd class="cmt"><p>配置对象
 </p></dd><dt>returns</dt><dd class="cmt"><p>是否存在子文件
 </p></dd></dl></div>
-    </li><li name="com.avcdata.etl.common.util.HdfsFileUtil#filterPathFiles" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.util.HdfsFileUtil#filterPathFiles" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="filterPathFiles(pathPattern:String,fileNamePattern:String,conf:org.apache.hadoop.conf.Configuration):Seq[org.apache.hadoop.fs.Path]"></a>
       <a id="filterPathFiles(String,String,Configuration):Seq[Path]"></a>
       <h4 class="signature">
@@ -392,8 +400,11 @@
         <span class="name">filterPathFiles</span><span class="params">(<span name="pathPattern">pathPattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fileNamePattern">fileNamePattern: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="conf">conf: <span class="extype" name="org.apache.hadoop.conf.Configuration">Configuration</span> = <span class="symbol"><span class="name"><a href="../../../../../org/package.html">new Configuration()</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="org.apache.hadoop.fs.Path">Path</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">获取指定路径中符合过滤条件的文件信息
-</p>
+      <p class="shortcomment cmt">获取指定路径中符合过滤条件的文件信息。
+</p><div class="fullcomment"><div class="comment cmt"><p>获取指定路径中符合过滤条件的文件信息。
+</p></div><dl class="paramcmts block"><dt class="param">pathPattern</dt><dd class="cmt"><p>文件路径匹配正则表达式。</p></dd><dt class="param">fileNamePattern</dt><dd class="cmt"><p>文件名匹配表达式。</p></dd><dt class="param">conf</dt><dd class="cmt"><p>Hadoop配置对象。
+</p></dd><dt>returns</dt><dd class="cmt"><p>符合条件的文件路径对象。
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
