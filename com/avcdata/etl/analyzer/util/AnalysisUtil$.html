@@ -39,7 +39,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>分析工具</p><p>Author   : wangxp</p><p>DateTime : 2016/11/30 14:33
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>分句/分词工具</p><p>Author   : wangxp</p><p>DateTime : 2016/11/30 14:33
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="../../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
@@ -307,7 +307,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="com.avcdata.etl.analyzer.util.AnalysisUtil#split" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="split[T](content:String,forests:Seq[org.nlpcn.commons.lang.tire.domain.Forest],res:Seq[org.ansj.recognition.Recognition])(implicitmf:scala.reflect.Manifest[T]):Seq[T]"></a>
+      <a id="split[T](content:String,forests:Seq[org.nlpcn.commons.lang.tire.domain.Forest],recs:Seq[org.ansj.recognition.Recognition])(implicitmf:scala.reflect.Manifest[T]):Seq[T]"></a>
       <a id="split[T](String,Seq[Forest],Seq[Recognition])(Manifest[T]):Seq[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -315,12 +315,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">split</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="content">content: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="forests">forests: <a href="../../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="org.nlpcn.commons.lang.tire.domain.Forest">Forest</span>]</span>, <span name="res">res: <a href="../../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="org.ansj.recognition.Recognition">Recognition</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mf">mf: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="com.avcdata.etl.analyzer.util.AnalysisUtil.split.T">T</span>]</span>)</span><span class="result">: <a href="../../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="com.avcdata.etl.analyzer.util.AnalysisUtil.split.T">T</span>]</span>
+        <span class="name">split</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="content">content: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="forests">forests: <a href="../../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="org.nlpcn.commons.lang.tire.domain.Forest">Forest</span>]</span>, <span name="recs">recs: <a href="../../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="org.ansj.recognition.Recognition">Recognition</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="mf">mf: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="com.avcdata.etl.analyzer.util.AnalysisUtil.split.T">T</span>]</span>)</span><span class="result">: <a href="../../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="com.avcdata.etl.analyzer.util.AnalysisUtil.split.T">T</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">将内容切分为单词或Term
-</p><div class="fullcomment"><div class="comment cmt"><p>将内容切分为单词或Term
-</p></div><dl class="paramcmts block"><dt class="param">content</dt><dd class="cmt"><p>内容</p></dd><dt class="param">forests</dt><dd class="cmt"><p>词典集</p></dd><dt class="param">res</dt><dd class="cmt"><p>过滤组件</p></dd><dt>returns</dt><dd class="cmt"><p>TERMS
+      <p class="shortcomment cmt">将内容切分为单词或Term。</p><div class="fullcomment"><div class="comment cmt"><p>将内容切分为单词或Term。</p><p>返回结果类型T为<code>java.lang.String</code>或<code>org.ansj.domain.Term</code>。
+</p></div><dl class="paramcmts block"><dt class="param">content</dt><dd class="cmt"><p>内容</p></dd><dt class="param">forests</dt><dd class="cmt"><p>词典集</p></dd><dt class="param">recs</dt><dd class="cmt"><p>过滤组件
+</p></dd><dt>returns</dt><dd class="cmt"><p>分词结果/Terms
 </p></dd></dl></div>
     </li><li name="com.avcdata.etl.analyzer.util.AnalysisUtil#splitToSentences" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="splitToSentences(content:String,sentenceRegx:String):Seq[String]"></a>
@@ -336,7 +336,8 @@
       </h4>
       <p class="shortcomment cmt">将内容切分为句子
 </p><div class="fullcomment"><div class="comment cmt"><p>将内容切分为句子
-</p></div><dl class="paramcmts block"><dt class="param">content</dt><dd class="cmt"><p>需要切分的内容</p></dd><dt>returns</dt><dd class="cmt"><p>切分后的句子
+</p></div><dl class="paramcmts block"><dt class="param">content</dt><dd class="cmt"><p>需要切分的内容
+</p></dd><dt>returns</dt><dd class="cmt"><p>切分后的句子
 </p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>

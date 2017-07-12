@@ -39,7 +39,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>JVM实例内持有词典、停词过滤器信息单例
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="../../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -254,7 +255,8 @@
       </h4>
       <p class="shortcomment cmt">根据字典键获取字典,若未获取到对应的字典,则返回<code>null</code>
 </p><div class="fullcomment"><div class="comment cmt"><p>根据字典键获取字典,若未获取到对应的字典,则返回<code>null</code>
-</p></div><dl class="paramcmts block"><dt class="param">dictKey</dt><dd class="cmt"><p>字典键</p></dd><dt>returns</dt><dd class="cmt"><p>字典
+</p></div><dl class="paramcmts block"><dt class="param">dictKey</dt><dd class="cmt"><p>字典键
+</p></dd><dt>returns</dt><dd class="cmt"><p>字典
 </p></dd></dl></div>
     </li><li name="com.avcdata.etl.analyzer.dict.DictLoader#getStopRecognition" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getStopRecognition(dictKey:String):org.ansj.recognition.Recognition"></a>
@@ -270,7 +272,8 @@
       </h4>
       <p class="shortcomment cmt">根据字典键获取停词过滤器,若未获取到对应的停词过滤器,则返回<code>null</code>
 </p><div class="fullcomment"><div class="comment cmt"><p>根据字典键获取停词过滤器,若未获取到对应的停词过滤器,则返回<code>null</code>
-</p></div><dl class="paramcmts block"><dt class="param">dictKey</dt><dd class="cmt"><p>字典KEY</p></dd><dt>returns</dt><dd class="cmt"><p>停词过滤器
+</p></div><dl class="paramcmts block"><dt class="param">dictKey</dt><dd class="cmt"><p>字典KEY
+</p></dd><dt>returns</dt><dd class="cmt"><p>停词过滤器
 </p></dd></dl></div>
     </li><li name="com.avcdata.etl.analyzer.dict.DictLoader#globalGeneralDictKey" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="globalGeneralDictKey:String"></a>
@@ -284,7 +287,8 @@
         <span class="name">globalGeneralDictKey</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">全局通用词典键
+</p>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -298,7 +302,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.avcdata.etl.analyzer.dict.DictLoader#init" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.analyzer.dict.DictLoader#init" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="init(dictLoader:com.avcdata.etl.analyzer.dict.DictLoader):Unit"></a>
       <a id="init(DictLoader):Unit"></a>
       <h4 class="signature">
@@ -311,7 +315,9 @@
       </span>
       </h4>
       <p class="shortcomment cmt">字典初始化
-</p>
+</p><div class="fullcomment"><div class="comment cmt"><p>字典初始化
+</p></div><dl class="paramcmts block"><dt class="param">dictLoader</dt><dd class="cmt"><p>使用词典加载器对词典进行初始化
+</p></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>

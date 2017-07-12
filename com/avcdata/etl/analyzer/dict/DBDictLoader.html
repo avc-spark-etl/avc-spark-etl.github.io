@@ -39,7 +39,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>从数据库中加载扩展词、停词信息</p><p>Author   : wangxp</p><p>DateTime : 2016/12/2 16:17
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="DictLoader.html" class="extype" name="com.avcdata.etl.analyzer.dict.DictLoader">DictLoader</a>, <a href="../../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
@@ -82,7 +83,7 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="com.avcdata.etl.analyzer.dict.DBDictLoader#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+              <ol><li name="com.avcdata.etl.analyzer.dict.DBDictLoader#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&lt;init&gt;(connectURI:String,username:String,password:String):com.avcdata.etl.analyzer.dict.DBDictLoader"></a>
       <a id="&lt;init&gt;:DBDictLoader"></a>
       <h4 class="signature">
@@ -94,8 +95,7 @@
         <span class="name">DBDictLoader</span><span class="params">(<span name="connectURI">connectURI: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="username">username: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
       </span>
       </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">connectURI</dt><dd class="cmt"><p>数据库连接URI</p></dd><dt class="param">username</dt><dd class="cmt"><p>数据库用户名</p></dd><dt class="param">password</dt><dd class="cmt"><p>数据库密码
-</p></dd></dl></div>
+      
     </li></ol>
             </div>
 
@@ -307,7 +307,9 @@
         <span class="name">globalExtTblName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+      <p class="shortcomment cmt">全局扩展词典表名称
+</p><div class="fullcomment"><div class="comment cmt"><p>全局扩展词典表名称
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="com.avcdata.etl.analyzer.dict.DBDictLoader#globalStopWordsTblName" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="globalStopWordsTblName:String"></a>
       <a id="globalStopWordsTblName:String"></a>
@@ -320,7 +322,9 @@
         <span class="name">globalStopWordsTblName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+      <p class="shortcomment cmt">全局停词表名称
+</p><div class="fullcomment"><div class="comment cmt"><p>全局停词表名称
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -375,9 +379,9 @@
         <span class="name">loadGlobalStopWords</span><span class="params">()</span><span class="result">: <a href="../../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">加载全局通用停词
-</p><div class="fullcomment"><div class="comment cmt"><p>加载全局通用停词
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>全局通用停词
+      <p class="shortcomment cmt">加载全局停词
+</p><div class="fullcomment"><div class="comment cmt"><p>加载全局停词
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>全局停词
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="com.avcdata.etl.analyzer.dict.DBDictLoader">DBDictLoader</a> → <a href="DictLoader.html" class="extype" name="com.avcdata.etl.analyzer.dict.DictLoader">DictLoader</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
