@@ -210,20 +210,20 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="com.avcdata.etl.common.util.JDBCScriptExecutor#executeScriptLines" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="executeScriptLines(scriptLines:Seq[String],conn:java.sql.Connection,hiveContext:org.apache.spark.sql.hive.HiveContext,mergedParams:Map[String,String]):org.apache.spark.sql.DataFrame"></a>
-      <a id="executeScriptLines(Seq[String],Connection,HiveContext,Map[String,String]):DataFrame"></a>
+      <a id="executeScriptLines(scriptLines:Seq[String],url:String,user:String,password:String,hiveContext:org.apache.spark.sql.SQLContext,mergedParams:Map[String,String]):org.apache.spark.sql.DataFrame"></a>
+      <a id="executeScriptLines(Seq[String],String,String,String,SQLContext,Map[String,String]):DataFrame"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">executeScriptLines</span><span class="params">(<span name="scriptLines">scriptLines: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="conn">conn: <span class="extype" name="java.sql.Connection">Connection</span></span>, <span name="hiveContext">hiveContext: <span class="extype" name="org.apache.spark.sql.hive.HiveContext">HiveContext</span></span>, <span name="mergedParams">mergedParams: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="org.apache.spark.sql.DataFrame">DataFrame</span></span>
+        <span class="name">executeScriptLines</span><span class="params">(<span name="scriptLines">scriptLines: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="user">user: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="hiveContext">hiveContext: <span class="extype" name="org.apache.spark.sql.SQLContext">SQLContext</span></span>, <span name="mergedParams">mergedParams: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="org.apache.spark.sql.DataFrame">DataFrame</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">指定需要执行的脚本行,返回最后一行脚本执行结果集
-</p><div class="fullcomment"><div class="comment cmt"><p>指定需要执行的脚本行,返回最后一行脚本执行结果集
-</p></div><dl class="paramcmts block"><dt class="param">scriptLines</dt><dd class="cmt"><p>需要执行的脚本行</p></dd><dt class="param">conn</dt><dd class="cmt"><p>数据连接</p></dd><dt class="param">hiveContext</dt><dd class="cmt"><p>HIVE上下文对象</p></dd><dt class="param">mergedParams</dt><dd class="cmt"><p>执行参数
+      <p class="shortcomment cmt">指定需要执行的脚本行,返回最后一行脚本执行结果集。
+</p><div class="fullcomment"><div class="comment cmt"><p>指定需要执行的脚本行,返回最后一行脚本执行结果集。
+</p></div><dl class="paramcmts block"><dt class="param">scriptLines</dt><dd class="cmt"><p>需要执行的脚本行</p></dd><dt class="param">hiveContext</dt><dd class="cmt"><p>HIVE上下文对象</p></dd><dt class="param">mergedParams</dt><dd class="cmt"><p>执行参数
 </p></dd><dt>returns</dt><dd class="cmt"><p>执行结果集(以DataFrame的形式返回执行的结果集)
 </p></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">

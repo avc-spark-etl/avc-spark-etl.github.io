@@ -56,13 +56,68 @@
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.apache.spark.sql.execution.datasources.jdbc.CustomDataFrameReader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CustomDataFrameReaderextendsLogging"></a>
+      <a id="CustomDataFrameReader:CustomDataFrameReader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CustomDataFrameReader.html"><span class="name">CustomDataFrameReader</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.Logging">Logging</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">自定义DataFram读取</p>
+    </li><li name="org.apache.spark.sql.execution.datasources.jdbc.CustomJDBCRDD" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CustomJDBCRDDextendsRDD[org.apache.spark.sql.catalyst.InternalRow]"></a>
+      <a id="CustomJDBCRDD:CustomJDBCRDD"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CustomJDBCRDD.html"><span class="name">CustomJDBCRDD</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="org.apache.spark.sql.catalyst.InternalRow">InternalRow</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="org.apache.spark.sql.execution.datasources.jdbc.CustomJDBCRelation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CustomJDBCRelationextendsBaseRelationwithPrunedFilteredScanwithProductwithSerializable"></a>
+      <a id="CustomJDBCRelation:CustomJDBCRelation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CustomJDBCRelation.html"><span class="name">CustomJDBCRelation</span></a><span class="params">(<span name="sql">sql: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="user">user: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="parts">parts: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="org.apache.spark.Partition">spark.Partition</span>]</span>)</span><span class="params">(<span name="sqlContext">sqlContext: <span class="extype" name="org.apache.spark.sql.SQLContext">SQLContext</span></span>)</span><span class="result"> extends <span class="extype" name="org.apache.spark.sql.sources.BaseRelation">BaseRelation</span> with <span class="extype" name="org.apache.spark.sql.sources.PrunedFilteredScan">PrunedFilteredScan</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">自定义DataFrame信息</p>
+    </li></ol>
+            </div>
 
         
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="org.apache.spark.sql.execution.datasources.jdbc.JDBCDataFrameUtil" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="org.apache.spark.sql.execution.datasources.jdbc.CustomJDBCRDD" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CustomJDBCRDD"></a>
+      <a id="CustomJDBCRDD:CustomJDBCRDD"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CustomJDBCRDD$.html"><span class="name">CustomJDBCRDD</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.Logging">Logging</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">自定义JDBC RDD</p>
+    </li><li name="org.apache.spark.sql.execution.datasources.jdbc.JDBCDataFrameUtil" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="JDBCDataFrameUtil"></a>
       <a id="JDBCDataFrameUtil:JDBCDataFrameUtil"></a>
       <h4 class="signature">
@@ -71,7 +126,7 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="JDBCDataFrameUtil$.html"><span class="name">JDBCDataFrameUtil</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.Logging">Logging</span></span>
+        <a href="JDBCDataFrameUtil$.html"><span class="name">JDBCDataFrameUtil</span></a>
       </span>
       </h4>
       <p class="comment cmt">JDBC构造DF</p>

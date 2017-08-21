@@ -58,25 +58,93 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="com.avcdata.etl.export.base.jdbc.TransactionalDecisionSupport" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="TransactionalDecisionSupportextendsAnyRef"></a>
-      <a id="TransactionalDecisionSupport:TransactionalDecisionSupport"></a>
+              <ol><li name="com.avcdata.etl.export.base.jdbc.InsertExporter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InsertExporterextendsJDBCExporter"></a>
+      <a id="InsertExporter:InsertExporter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="InsertExporter.html"><span class="name">InsertExporter</span></a><span class="result"> extends <a href="JDBCExporter.html" class="extype" name="com.avcdata.etl.export.base.jdbc.JDBCExporter">JDBCExporter</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">插入数据模式基类</p>
+    </li><li name="com.avcdata.etl.export.base.jdbc.JDBCExporter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JDBCExporterextendsParallelWritewithLoggingwithSerializable"></a>
+      <a id="JDBCExporter:JDBCExporter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JDBCExporter.html"><span class="name">JDBCExporter</span></a><span class="result"> extends <a href="../ParallelWrite.html" class="extype" name="com.avcdata.etl.export.base.ParallelWrite">ParallelWrite</a> with <span class="extype" name="org.apache.spark.Logging">Logging</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">JDBC方式导出基类</p>
+    </li><li name="com.avcdata.etl.export.base.jdbc.LegacyInsertExporter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LegacyInsertExporterextendsInsertExporterwithProductwithSerializable"></a>
+      <a id="LegacyInsertExporter:LegacyInsertExporter"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="TransactionalDecisionSupport.html"><span class="name">TransactionalDecisionSupport</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="LegacyInsertExporter.html"><span class="name">LegacyInsertExporter</span></a><span class="params">(<span name="dfResult">dfResult: <span class="extype" name="org.apache.spark.sql.DataFrame">DataFrame</span></span>, <span name="config">config: <a href="../../config/ExportJDBCConfig.html" class="extype" name="com.avcdata.etl.export.config.ExportJDBCConfig">ExportJDBCConfig</a></span>)</span><span class="result"> extends <a href="InsertExporter.html" class="extype" name="com.avcdata.etl.export.base.jdbc.InsertExporter">InsertExporter</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
-      <p class="comment cmt">JDBC事务性决策支持</p>
+      <p class="comment cmt">遗留插入模式导出</p>
+    </li><li name="com.avcdata.etl.export.base.jdbc.NamedInsertExporter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NamedInsertExporterextendsInsertExporterwithProductwithSerializable"></a>
+      <a id="NamedInsertExporter:NamedInsertExporter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="NamedInsertExporter.html"><span class="name">NamedInsertExporter</span></a><span class="params">(<span name="dfResult">dfResult: <span class="extype" name="org.apache.spark.sql.DataFrame">DataFrame</span></span>, <span name="config">config: <a href="../../config/ExportJDBCConfig.html" class="extype" name="com.avcdata.etl.export.config.ExportJDBCConfig">ExportJDBCConfig</a></span>)</span><span class="result"> extends <a href="InsertExporter.html" class="extype" name="com.avcdata.etl.export.base.jdbc.InsertExporter">InsertExporter</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">按名称插入模式导出</p>
+    </li><li name="com.avcdata.etl.export.base.jdbc.UpdateExporter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UpdateExporterextendsJDBCExporterwithProductwithSerializable"></a>
+      <a id="UpdateExporter:UpdateExporter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UpdateExporter.html"><span class="name">UpdateExporter</span></a><span class="params">(<span name="dfResult">dfResult: <span class="extype" name="org.apache.spark.sql.DataFrame">DataFrame</span></span>, <span name="config">config: <a href="../../config/ExportJDBCConfig.html" class="extype" name="com.avcdata.etl.export.config.ExportJDBCConfig">ExportJDBCConfig</a></span>)</span><span class="result"> extends <a href="JDBCExporter.html" class="extype" name="com.avcdata.etl.export.base.jdbc.JDBCExporter">JDBCExporter</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">更新模式导出</p>
     </li></ol>
             </div>
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.avcdata.etl.export.base.jdbc.JDBCUpdateMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JDBCUpdateMode"></a>
+      <a id="JDBCUpdateMode:JDBCUpdateMode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JDBCUpdateMode$.html"><span class="name">JDBCUpdateMode</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">JDBC更新模式</p>
+    </li></ol>
+            </div>
 
         
 

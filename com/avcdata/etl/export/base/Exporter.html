@@ -35,14 +35,14 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">Exporter</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">Exporter</span><span class="result"> extends <a href="ParallelWrite.html" class="extype" name="com.avcdata.etl.export.base.ParallelWrite">ParallelWrite</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>导出</p><p>Author   : wangxp</p><p>DateTime : 2016/12/22 10:15
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="ParallelWrite.html" class="extype" name="com.avcdata.etl.export.base.ParallelWrite">ParallelWrite</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
           <div class="subClasses hiddenContent"><a href="../ExportCsvHelper$.html" class="extype" name="com.avcdata.etl.export.ExportCsvHelper">ExportCsvHelper</a>, <a href="../ExportDBHelper$.html" class="extype" name="com.avcdata.etl.export.ExportDBHelper">ExportDBHelper</a>, <a href="../ExportESHelper$.html" class="extype" name="com.avcdata.etl.export.ExportESHelper">ExportESHelper</a>, <a href="../ExportK2MHelper$.html" class="extype" name="com.avcdata.etl.export.ExportK2MHelper">ExportK2MHelper</a>, <a href="../ExportKafkaHelper$.html" class="extype" name="com.avcdata.etl.export.ExportKafkaHelper">ExportKafkaHelper</a>, <a href="../ExportMongoHelper$.html" class="extype" name="com.avcdata.etl.export.ExportMongoHelper">ExportMongoHelper</a>, <a href="../ExportRedisHelper$.html" class="extype" name="com.avcdata.etl.export.ExportRedisHelper">ExportRedisHelper</a></div>
@@ -63,7 +63,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.avcdata.etl.export.base.Exporter"><span>Exporter</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.avcdata.etl.export.base.Exporter"><span>Exporter</span></li><li class="in" name="com.avcdata.etl.export.base.ParallelWrite"><span>ParallelWrite</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -338,7 +338,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.avcdata.etl.export.base.Exporter#parallelWriteNum" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.avcdata.etl.export.base.ParallelWrite#parallelWriteNum" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="parallelWriteNum(df:org.apache.spark.sql.DataFrame,defaultNum:Int):Int"></a>
       <a id="parallelWriteNum(DataFrame,Int):Int"></a>
       <h4 class="signature">
@@ -350,7 +350,7 @@
         <span class="name">parallelWriteNum</span><span class="params">(<span name="df">df: <span class="extype" name="org.apache.spark.sql.DataFrame">DataFrame</span></span>, <span name="defaultNum">defaultNum: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">6</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="ParallelWrite.html" class="extype" name="com.avcdata.etl.export.base.ParallelWrite">ParallelWrite</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -443,7 +443,9 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="com.avcdata.etl.export.base.ParallelWrite">
+              <h3>Inherited from <a href="ParallelWrite.html" class="extype" name="com.avcdata.etl.export.base.ParallelWrite">ParallelWrite</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

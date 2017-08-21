@@ -153,7 +153,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#array_append" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#array_append" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="array_append:(String,Seq[String])=&gt;Seq[String]"></a>
       <a id="array_append:(String,Seq[String])⇒Seq[String]"></a>
       <h4 class="signature">
@@ -165,8 +165,10 @@
         <span class="name">array_append</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]) ⇒ <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#array_filter_empty_value" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将字符串附加到数组的尾部。</p><div class="fullcomment"><div class="comment cmt"><p>将字符串附加到数组的尾部。</p><p>sourceElement 需要附加的字符串。
+destArray     目标数组。
+</p></div></div>
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#array_filter_empty_value" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="array_filter_empty_value:Seq[String]=&gt;Seq[String]"></a>
       <a id="array_filter_empty_value:(Seq[String])⇒Seq[String]"></a>
       <h4 class="signature">
@@ -178,7 +180,8 @@
         <span class="name">array_filter_empty_value</span><span class="result">: (<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]) ⇒ <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">过滤数据的空值,包含null值和去空格后为空串的值。</p><div class="fullcomment"><div class="comment cmt"><p>过滤数据的空值,包含null值和去空格后为空串的值。</p><p>values 需要过滤的序列。
+</p></div></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -243,7 +246,15 @@
         <span class="name">available_day</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">根据HIVE数据库名、表名、字段名获取可用日期信息。
+connUri         数据库连接串。
+username        数据库用户名。
+password        数据库密码。
+dbName          获取可用日期信息的数据库名。
+tblName         获取可用日期信息的表名。
+fieldName       获取可用日期信息的字段名。
+dayOffset       日偏移量。
+</p>
     </li><li name="com.avcdata.etl.common.udf.UDFAlias#available_month" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="available_month:(String,String,String,String,String,String,Int,Int)=&gt;String"></a>
       <a id="available_month:(String,String,String,String,String,String,Int,Int)⇒String"></a>
@@ -256,7 +267,16 @@
         <span class="name">available_month</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">根据HIVE数据库名、表名、字段名获取可用年月信息。
+connUri         数据库连接串。
+username        数据库用户名。
+password        数据库密码。
+dbName          获取可用月份信息的数据库名。
+tblName         获取可用月份信息的表名。
+fieldName       获取可用月份信息的字段名。
+yearOffset      年偏移量。
+monthOffset     月偏移量。
+</p>
     </li><li name="com.avcdata.etl.common.udf.UDFAlias#available_week" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="available_week:(String,String,String,String,String,String,Int,Int)=&gt;String"></a>
       <a id="available_week:(String,String,String,String,String,String,Int,Int)⇒String"></a>
@@ -269,7 +289,16 @@
         <span class="name">available_week</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">根据HIVE数据库名、表名、字段名获取可用年周信息。
+connUri         数据库连接串。
+username        数据库用户名。
+password        数据库密码。
+dbName          获取可用年周信息的数据库名。
+tblName         获取可用年周信息的表名。
+fieldName       获取可用年周信息的字段名。
+yearOffset      年偏移量。
+weekOffset      周偏移量。
+</p>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -289,7 +318,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#date_to_year_week" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#date_to_year_week" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="date_to_year_week:(String,String,Int,Int,Int,String)=&gt;String"></a>
       <a id="date_to_year_week:(String,String,Int,Int,Int,String)⇒String"></a>
       <h4 class="signature">
@@ -301,7 +330,13 @@
         <span class="name">date_to_year_week</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">将指定时间计算时间偏移后转换为年周格式,如16W22。</p><div class="fullcomment"><div class="comment cmt"><p>将指定时间计算时间偏移后转换为年周格式,如16W22。</p><p>sourceTime    源日期时间字符串。
+timePattern   日期时间格式化字符串，比如yyyy-MM-dd。
+yearOffset    年偏移量。
+monthOffset   月偏移量。
+dayOffset     日偏移量。
+beginYearWeek 是否需要是年周开始（true/false）。
+</p></div></div>
     </li><li name="com.avcdata.etl.common.udf.UDFAlias#db_or_coord_category_date" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="db_or_coord_category_date:(String,String,String,String,String,String,String,Int,Int,String,String)=&gt;String"></a>
       <a id="db_or_coord_category_date:(String,String,String,String,String,String,String,Int,Int,String,String)⇒String"></a>
@@ -324,7 +359,7 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">db_or_coord_category_month</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">db_or_coord_category_month</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       
@@ -366,7 +401,8 @@
         <span class="name">db_or_coord_date</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">同available_day函数，区别在于最后两个参数分别为coordDate（调度器传入时间）、useCoordDate（是否使用调度器时间true/false）。
+</p>
     </li><li name="com.avcdata.etl.common.udf.UDFAlias#db_or_coord_month" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="db_or_coord_month:(String,String,String,String,String,String,Int,Int,String,String)=&gt;String"></a>
       <a id="db_or_coord_month:(String,String,String,String,String,String,Int,Int,String,String)⇒String"></a>
@@ -379,7 +415,8 @@
         <span class="name">db_or_coord_month</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">同available_month函数，区别在于最后两个参数分别为coordDate（调度器传入时间）、useCoordDate（是否使用调度器时间true/false）。
+</p>
     </li><li name="com.avcdata.etl.common.udf.UDFAlias#db_or_coord_period" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="db_or_coord_period:(String,String,String,String,String,String,Int,Int,String,String,String,String)=&gt;String"></a>
       <a id="db_or_coord_period:(String,String,String,String,String,String,Int,Int,String,String,String,String)⇒String"></a>
@@ -405,7 +442,8 @@
         <span class="name">db_or_coord_week</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">同available_week函数，区别在于最后两个参数分别为coordDate（调度器传入时间）、useCoordDate（是否使用调度器时间true/false）。
+</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -451,7 +489,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#full_time_format" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#full_time_format" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="full_time_format:(String,String,Int,Int,Int,Int,Int,Int,String)=&gt;String"></a>
       <a id="full_time_format:(String,String,Int,Int,Int,Int,Int,Int,String)⇒String"></a>
       <h4 class="signature">
@@ -463,7 +501,16 @@
         <span class="name">full_time_format</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">将指定时间计算时间偏移后转换为指定格式。</p><div class="fullcomment"><div class="comment cmt"><p>将指定时间计算时间偏移后转换为指定格式。</p><p>sourceTime      源日期时间字符串。
+timePattern     源日期时间格式化字符串。
+yearOffset      年偏移量。
+monthOffset     月偏移量。
+dayOffset       日偏移量。
+hourOffset      小时偏移量。
+minuteOffset    分钟偏移量。
+secondOffset    秒偏移量。
+destTimePattern 目标日期时间格式化字符串。
+</p></div></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -503,6 +550,34 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#month_to_half_year" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="month_to_half_year:String=&gt;String"></a>
+      <a id="month_to_half_year:(String)⇒String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">month_to_half_year</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">将月度转换为半年度。</p><div class="fullcomment"><div class="comment cmt"><p>将月度转换为半年度。</p><p>srcMonth 月度值。
+</p></div></div>
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#month_to_quarter_year" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="month_to_quarter_year:String=&gt;String"></a>
+      <a id="month_to_quarter_year:(String)⇒String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">month_to_quarter_year</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">将月度转换为季度。</p><div class="fullcomment"><div class="comment cmt"><p>将月度转换为季度。</p><p>srcMonth 月度值
+</p></div></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -542,7 +617,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#pin_yin" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#pin_yin" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="pin_yin:String=&gt;String"></a>
       <a id="pin_yin:(String)⇒String"></a>
       <h4 class="signature">
@@ -554,8 +629,9 @@
         <span class="name">pin_yin</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#replace_emoji" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将汉字转换为全拼。</p><div class="fullcomment"><div class="comment cmt"><p>将汉字转换为全拼。</p><p>src 汉字字符串。
+</p></div></div>
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#replace_emoji" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="replace_emoji:(String,String)=&gt;String"></a>
       <a id="replace_emoji:(String,String)⇒String"></a>
       <h4 class="signature">
@@ -567,7 +643,9 @@
         <span class="name">replace_emoji</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">替换Emoji表情。</p><div class="fullcomment"><div class="comment cmt"><p>替换Emoji表情。</p><p>source      源字符串。
+replacement 需要替换的字符串。
+</p></div></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -581,7 +659,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_format" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_format" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="time_format:(String,String,Int,Int,Int,String)=&gt;String"></a>
       <a id="time_format:(String,String,Int,Int,Int,String)⇒String"></a>
       <h4 class="signature">
@@ -593,8 +671,14 @@
         <span class="name">time_format</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_begin_year_week" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将指定日期计算偏移后转换为指定格式。</p><div class="fullcomment"><div class="comment cmt"><p>将指定日期计算偏移后转换为指定格式。</p><p>sourceTime      源日期字符串。
+timePattern     源日期格式化字符串。
+yearOffset      年偏移量。
+monthOffset     月偏移量。
+dayOffset       日偏移量。
+destTimePattern 目标日期格式化字符串。
+</p></div></div>
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_begin_year_week" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="time_to_begin_year_week:(String,String)=&gt;String"></a>
       <a id="time_to_begin_year_week:(String,String)⇒String"></a>
       <h4 class="signature">
@@ -606,8 +690,10 @@
         <span class="name">time_to_begin_year_week</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_month_end" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将指定时间转换为本年开始YearWWeek格式,例如16W01。</p><div class="fullcomment"><div class="comment cmt"><p>将指定时间转换为本年开始YearWWeek格式,例如16W01。</p><p>sourceTime  源日期时间字符串。
+timePattern 日期时间格式化字符串，比如yyyy-MM-dd。
+</p></div></div>
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_month_end" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="time_to_month_end:(String,String,Int,String)=&gt;String"></a>
       <a id="time_to_month_end:(String,String,Int,String)⇒String"></a>
       <h4 class="signature">
@@ -619,8 +705,12 @@
         <span class="name">time_to_month_end</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_month_start" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">获取指定时间偏移量的当前月结束时间，使用指定时间格式化，偏移后的月度的结束时间。</p><div class="fullcomment"><div class="comment cmt"><p>获取指定时间偏移量的当前月结束时间，使用指定时间格式化，偏移后的月度的结束时间。</p><p>sourceTime      日期时间字符串。
+timePattern     日期时间格式化字符串。
+monthOffset     月偏移量。
+destTimePattern 目标日期时间字符串。
+</p></div></div>
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_month_start" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="time_to_month_start:(String,String,Int,String)=&gt;String"></a>
       <a id="time_to_month_start:(String,String,Int,String)⇒String"></a>
       <h4 class="signature">
@@ -632,8 +722,12 @@
         <span class="name">time_to_month_start</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_week" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">获取指定时间偏移量的当前月开始时间，使用指定时间格式化，偏移后的月度的开始时间。</p><div class="fullcomment"><div class="comment cmt"><p>获取指定时间偏移量的当前月开始时间，使用指定时间格式化，偏移后的月度的开始时间。</p><p>sourceTime      日期时间字符串。
+timePattern     日期时间格式化字符串。
+monthOffset     月偏移量。
+destTimePattern 目标日期时间字符串。
+</p></div></div>
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_week" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="time_to_week:(String,String,Int)=&gt;String"></a>
       <a id="time_to_week:(String,String,Int)⇒String"></a>
       <h4 class="signature">
@@ -645,8 +739,11 @@
         <span class="name">time_to_week</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_week_end" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">将指定时间转换为一年中的第几周，返回一年中的周度,比如06。</p><div class="fullcomment"><div class="comment cmt"><p>将指定时间转换为一年中的第几周，返回一年中的周度,比如06。</p><p>sourceTime  指定日期时间字符串。
+timePattern 日期时间格式化字符串。
+weekOffset  周偏移量。
+</p></div></div>
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_week_end" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="time_to_week_end:(String,String,Int,String)=&gt;String"></a>
       <a id="time_to_week_end:(String,String,Int,String)⇒String"></a>
       <h4 class="signature">
@@ -658,8 +755,12 @@
         <span class="name">time_to_week_end</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_week_start" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">获取指定时间偏移量的当前周结束时间，使用指定时间格式化，返回偏移后的周度的结束时间。</p><div class="fullcomment"><div class="comment cmt"><p>获取指定时间偏移量的当前周结束时间，使用指定时间格式化，返回偏移后的周度的结束时间。</p><p>sourceTime      日期时间字符串。
+timePattern     日期时间格式化字符串。
+dayOffset       日偏移量。
+destTimePattern 目标日期时间字符串。
+</p></div></div>
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_week_start" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="time_to_week_start:(String,String,Int,String)=&gt;String"></a>
       <a id="time_to_week_start:(String,String,Int,String)⇒String"></a>
       <h4 class="signature">
@@ -671,8 +772,12 @@
         <span class="name">time_to_week_start</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_year_week" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">获取指定时间偏移量的当前周开始时间，使用指定时间格式化，返回偏移后的周度的开始时间。</p><div class="fullcomment"><div class="comment cmt"><p>获取指定时间偏移量的当前周开始时间，使用指定时间格式化，返回偏移后的周度的开始时间。</p><p>sourceTime      日期时间字符串。
+timePattern     日期时间格式化字符串。
+dayOffset       日偏移量。
+destTimePattern 目标日期时间字符串。
+</p></div></div>
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#time_to_year_week" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="time_to_year_week:(String,String,Int)=&gt;String"></a>
       <a id="time_to_year_week:(String,String,Int)⇒String"></a>
       <h4 class="signature">
@@ -684,7 +789,10 @@
         <span class="name">time_to_year_week</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">将指定时间转换为YearWWeek格式,例如16W21。</p><div class="fullcomment"><div class="comment cmt"><p>将指定时间转换为YearWWeek格式,例如16W21。</p><p>sourceTime  指定日期时间字符串。
+timePattern 日期时间格式化字符串，比如yyyy-MM-dd。
+weekOffset  周偏移量。
+</p></div></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
@@ -698,7 +806,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#unicode_to_string" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#unicode_to_string" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="unicode_to_string:String=&gt;String"></a>
       <a id="unicode_to_string:(String)⇒String"></a>
       <h4 class="signature">
@@ -710,7 +818,8 @@
         <span class="name">unicode_to_string</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">将UNICODE字符转换为解码后的字符串。</p><div class="fullcomment"><div class="comment cmt"><p>将UNICODE字符转换为解码后的字符串。</p><p>unicode unicode字符。
+</p></div></div>
     </li><li name="com.avcdata.etl.common.udf.UDFAlias#uuid" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="uuid:()=&gt;String"></a>
       <a id="uuid:()⇒String"></a>
@@ -723,7 +832,8 @@
         <span class="name">uuid</span><span class="result">: () ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">生成不带&quot;-&quot;的UUID字符串。
+</p>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -781,7 +891,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#year_month" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#year_month" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="year_month:(String,Int,Int)=&gt;String"></a>
       <a id="year_month:(String,Int,Int)⇒String"></a>
       <h4 class="signature">
@@ -793,8 +903,11 @@
         <span class="name">year_month</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
-    </li><li name="com.avcdata.etl.common.udf.UDFAlias#year_week" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">月年偏移计算，偏移后的年月字符串。</p><div class="fullcomment"><div class="comment cmt"><p>月年偏移计算，偏移后的年月字符串。</p><p>srcYearMonth 源年月字符串。
+yearOffset   年偏移量。
+monthOffset  月偏移量。
+</p></div></div>
+    </li><li name="com.avcdata.etl.common.udf.UDFAlias#year_week" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="year_week:(String,Int,Int)=&gt;String"></a>
       <a id="year_week:(String,Int,Int)⇒String"></a>
       <h4 class="signature">
@@ -806,7 +919,10 @@
         <span class="name">year_week</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">周偏移计算，返回偏移后的年周字符串。</p><div class="fullcomment"><div class="comment cmt"><p>周偏移计算，返回偏移后的年周字符串。</p><p>srcYearWeek 源年周字符串。
+yearOffset  年偏移量。
+weekOffset  周偏移量。
+</p></div></div>
     </li></ol>
             </div>
 

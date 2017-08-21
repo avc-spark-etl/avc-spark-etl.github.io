@@ -35,7 +35,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">ExportJDBCConfig</span><span class="params">(<span name="connectUri">connectUri: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="username">username: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="table">table: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="updateKey">updateKey: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="deleteKey">deleteKey: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="columns">columns: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="insertSQL">insertSQL: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="transactional">transactional: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="batch">batch: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="batchSize">batchSize: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span> with <span class="extype" name="scala.Product">Product</span></span>
+        <span class="name">ExportJDBCConfig</span><span class="params">(<span name="useLegacyMode">useLegacyMode: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="connectUri">connectUri: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="username">username: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="updateMode">updateMode: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="table">table: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="updateKey">updateKey: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="deleteKey">deleteKey: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="columns">columns: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="insertSQL">insertSQL: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="updateSQL">updateSQL: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="transactional">transactional: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="batch">batch: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="batchSize">batchSize: <span class="extype" name="scala.Int">Int</span></span>, <span name="parallelWriteNum">parallelWriteNum: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span> with <span class="extype" name="scala.Product">Product</span></span>
       </span>
       </h4>
       
@@ -81,7 +81,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="com.avcdata.etl.export.config.ExportJDBCConfig#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(connectUri:String,username:String,password:String,table:String,updateKey:String,deleteKey:String,columns:String,insertSQL:String,transactional:Boolean,batch:Boolean,batchSize:Int):com.avcdata.etl.export.config.ExportJDBCConfig"></a>
+      <a id="&lt;init&gt;(useLegacyMode:Boolean,connectUri:String,username:String,password:String,updateMode:String,table:String,updateKey:Seq[String],deleteKey:Seq[String],columns:Seq[String],insertSQL:String,updateSQL:String,transactional:Boolean,batch:Boolean,batchSize:Int,parallelWriteNum:Option[Int]):com.avcdata.etl.export.config.ExportJDBCConfig"></a>
       <a id="&lt;init&gt;:ExportJDBCConfig"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -89,7 +89,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">ExportJDBCConfig</span><span class="params">(<span name="connectUri">connectUri: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="username">username: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="table">table: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="updateKey">updateKey: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="deleteKey">deleteKey: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="columns">columns: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="insertSQL">insertSQL: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="transactional">transactional: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="batch">batch: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="batchSize">batchSize: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="name">ExportJDBCConfig</span><span class="params">(<span name="useLegacyMode">useLegacyMode: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="connectUri">connectUri: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="username">username: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="updateMode">updateMode: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="table">table: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="updateKey">updateKey: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="deleteKey">deleteKey: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="columns">columns: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="insertSQL">insertSQL: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="updateSQL">updateSQL: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="transactional">transactional: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="batch">batch: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="batchSize">batchSize: <span class="extype" name="scala.Int">Int</span></span>, <span name="parallelWriteNum">parallelWriteNum: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span>
       </span>
       </h4>
       
@@ -226,15 +226,15 @@
               
         </dd></dl></div>
     </li><li name="com.avcdata.etl.export.config.ExportJDBCConfig#columns" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="columns:String"></a>
-      <a id="columns:String"></a>
+      <a id="columns:Seq[String]"></a>
+      <a id="columns:Seq[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">columns</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">columns</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       
@@ -252,15 +252,15 @@
       </h4>
       
     </li><li name="com.avcdata.etl.export.config.ExportJDBCConfig#deleteKey" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="deleteKey:String"></a>
-      <a id="deleteKey:String"></a>
+      <a id="deleteKey:Seq[String]"></a>
+      <a id="deleteKey:Seq[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">deleteKey</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">deleteKey</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       
@@ -374,6 +374,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.avcdata.etl.export.config.ExportJDBCConfig#parallelWriteNum" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="parallelWriteNum:Option[Int]"></a>
+      <a id="parallelWriteNum:Option[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parallelWriteNum</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>
+      </span>
+      </h4>
+      
     </li><li name="com.avcdata.etl.export.config.ExportJDBCConfig#password" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="password:String"></a>
       <a id="password:String"></a>
@@ -427,15 +440,54 @@
       </h4>
       
     </li><li name="com.avcdata.etl.export.config.ExportJDBCConfig#updateKey" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="updateKey:String"></a>
-      <a id="updateKey:String"></a>
+      <a id="updateKey:Seq[String]"></a>
+      <a id="updateKey:Seq[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">updateKey</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">updateKey</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="com.avcdata.etl.export.config.ExportJDBCConfig#updateMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="updateMode:String"></a>
+      <a id="updateMode:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateMode</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.avcdata.etl.export.config.ExportJDBCConfig#updateSQL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="updateSQL:String"></a>
+      <a id="updateSQL:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateSQL</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.avcdata.etl.export.config.ExportJDBCConfig#useLegacyMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="useLegacyMode:Boolean"></a>
+      <a id="useLegacyMode:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">useLegacyMode</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
